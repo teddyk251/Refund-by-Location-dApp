@@ -22,4 +22,13 @@ class CallContract {
         EthereumAddress.fromHex(contractAddress));
     return contract;
   }
+
+  Future<List<dynamic>> query(String functionName, List<dynamic> args) async {
+    final contract = await loadContract();
+    final ethFunction = contract.function(functionName);
+    final result = await ethClient.call(
+        contract: contract, function: ethFunction, params: args);
+
+    return result;
+  }
 }
