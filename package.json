@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/teddyk251/Refund-by-Location-dApp#readme",
   "dependencies": {
+    "truffle-hdwallet-provider": "^1.0.17",
     "truffle-security": "^1.7.3"
   },
   "devDependencies": {
