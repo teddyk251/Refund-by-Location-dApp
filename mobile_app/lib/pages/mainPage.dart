@@ -27,7 +27,7 @@ class _MainPageState extends State<MainPage> {
     httpClient = Client();
     ethClient = Web3Client(infuraUrl, httpClient);
 
-    getBalance();
+    // getBalance();
   }
 
   Future<DeployedContract> loadContract() async {
