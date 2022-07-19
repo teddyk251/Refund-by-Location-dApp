@@ -19,18 +19,19 @@ contract Refund {
         owner = msg.sender;
     }
 
-    function createEmployee(address empAddress, string memory name, uint256 lat, uint256 lon, uint256 allowedDistance) public {
+    function addEmployee(address empAddress, string memory name, uint256 lat, uint256 lon, uint256 allowedDistance) public {
         // restrict employee creation to owner
+        // Builds a basic employee struc and adds the employee to 
         require(msg.sender == owner);
-        // set User name using the employeeDetail mapping
+
         employeeDetail[empAddress].name = name;
-        // set Employee lat using the userStructs mapping
+
         employeeDetail[empAddress].lat = lat;
-        // set Employee lon using the employeeDetail mapping
+
         employeeDetail[empAddress].lon = lon;
-        // set the Employee's allowed distance using the employeeDetail mapping
+
         employeeDetail[empAddress].allowedDistance = allowedDistance;
-        // push user address into userAddresses array
+
         employees.push(empAddress);
     }
 
@@ -50,7 +51,7 @@ contract Refund {
     }
 
 
-    // Find the square root of a number using the Babylonian method
+    // Calculate Square root
     function sqrt(uint x) public pure returns (uint y) {
     uint z = (x + 1) / 2;
     y = x;
