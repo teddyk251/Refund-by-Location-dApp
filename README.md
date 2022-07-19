@@ -11,13 +11,13 @@ This project requires Flutter for mobile app and admin panel and Truffle for the
 
 ## Contents
 
-### [Contracts][https://github.com/teddyk251/Refund-by-Location-dApp/tree/main/contracts]
+### [Contracts](https://github.com/teddyk251/Refund-by-Location-dApp/tree/main/contracts)
 Here is the smart contract for this project. It is built using Solidity.
 
-### [Mobile app][https://github.com/teddyk251/Refund-by-Location-dApp/tree/main/mobile_app]
+### [Mobile app](https://github.com/teddyk251/Refund-by-Location-dApp/tree/main/mobile_app)
 The mobile app is built using Flutter. It sends out the location of the user at random times to the smart contract.
 
-### [Admin panel][https://github.com/teddyk251/Refund-by-Location-dApp/tree/main/admin_panel]
+### [Admin panel](https://github.com/teddyk251/Refund-by-Location-dApp/tree/main/admin_panel)
 This is the dashboard used by the admin to add new employees into the contract and see whether they have fulfilled their compliance. This admin panel is built using Flutter.
 
 ## Contributors
